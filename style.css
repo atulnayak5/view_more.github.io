@@ -1,0 +1,266 @@
+
+body{
+
+     background-image: url(back.jpg);
+     background-size: cover;
+     background-attachment: fixed;
+}
+
+
+
+
+#div1{
+
+    width: 100%;
+  float: left;
+   background-color: #E8E9D8;
+    background-image: url(grass.jpg) ;
+    background-size: cover;
+    border-radius: 30px;
+    
+
+}
+h1{
+
+
+text-transform:uppercase;
+  font-size:72px;
+  font-family:'Verdana';
+  padding:30px;
+  text-align: center;
+  animation-timing-function: ease-in;
+
+}
+
+
+#textstyle1{
+
+
+     font-family: sans-serif;
+font-size: 30px;
+margin: 10px;
+
+
+
+}
+
+
+
+#textstyle2{
+
+
+     font-family: sans-serif;
+font-size: 25px;
+margin: 10px;
+text-decoration: blink;
+
+
+
+}
+
+.bot_img{
+
+	width: 450px;
+	float: right;
+
+	
+}
+  
+
+  .box{
+
+     width: 20%;
+     float: left;
+    margin: 50px 20px;
+     background-color: #fff;
+     background-image: url(walle.jpg);
+
+     padding: 15px;
+     border-radius: 30px;
+     box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+     border: 2px solid black;
+     height: 450px auto;
+
+  }
+
+
+   .box1{
+
+     width: 28%;
+     float: left;
+     margin: 40px 20px;
+     background-color: #DDDC9C;
+     padding: 15px;
+     border-radius: 30px;
+     box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+     border: 2px solid black;
+  }
+
+  .tex{
+
+font-family:  century gothic;
+font-size: 250%;
+text-align: center;
+}
+
+  .tex1{
+
+font-family:  century gothic;
+font-size: 200%;
+text-align: left;
+
+}
+
+ .bot_img1{
+
+     width: 350px;
+     
+     margin: 65px ;
+}
+
+.flow1{
+     width: 500px;
+     float: left;
+     border-radius: 8px;
+     margin: 50px;
+}
+
+.flow2{
+     width: 700px;
+     float: right;
+     border-radius: 8px;
+     margin: 50px;
+}
+
+.textsty{
+
+
+     font-family: sans-serif;
+font-size: 20px;
+margin: 10px;
+
+
+}
+
+.textsty3{
+
+
+     font-family: sans-serif;
+font-size: 15px;
+margin: 10px;
+
+
+}
+
+
+#bg{
+     background-image: url(tech.jpg);
+     background-size: cover;
+
+      width: 95%;
+    float: left;
+     margin: 50px 20px;
+    
+     padding: 15px;
+     border-radius: 8px;
+     box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+  }
+
+
+  #bg2{
+     background-image: url(ai.jpg);
+     background-size: cover;
+
+      width: 95%;
+     float: left;
+     margin: 50px 20px;
+    
+     padding: 15px;
+     border-radius: 8px;
+     box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+  }
+
+
+.textsty2{
+
+
+     font-family:century gothic;
+font-size: 30px;
+margin: 10px;
+
+}
+
+
+#more{
+     display: none;
+      transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+}
+
+#more2{
+     display: none;
+
+}
+
+#more3{
+     display: none;
+}
+
+#more4{
+     display: none;
+}
+
+#more5{
+     display: none;
+}
+
+#more6{
+     display: none;
+}
+
+#more7{
+     display: none;
+}
+#more8{
+     display: none;
+}
+
+
+.ai_img{
+     border-radius: 8px;
+   float: right;
+     
+
+     
+
+}
+
+#myDiv {
+  transform: rotateZ(90deg);
+  transform: rotateX(90deg);
+  transform: rotateY(90deg);
+}
+
+.divstyle{
+     width: 100%;
+     background-color:#fff;
+     height: 100px;
+
+}
+  
+  button{
+     border-radius: 10px;
+     background-color: red;
+     border: 2px solid yellow;
+     box-shadow: 0 5px 5px rgba(0, 0, 0, 1.0);
+
+
+  }
+
+.button_text{
+     font-family:'poppins';
+     color: yellow;
+
+}

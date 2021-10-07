@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Agrobot</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body >
+	<div id="div1" >
+		<h1>PHYSICAL STRUCTURE</h1>
+		<img  class="bot_img" src="Agro1.png" >
+
+		
+		<p id="textstyle1">  The complete physical structure is broadly divided into 4 major parts</p>
+
+<ol id="textstyle2">
+
+
+ <li><b>CHASSIS</b></li>
+ <li> <b>DRIVE MODULE</b></li>
+ <li> <b>WEED REMOVER</b></li>
+ <li> <b>SPRAYER</b></li>
+
+
+</ol>
+
+<p  id="textstyle1">All the 4 modules are explained one by one 
+
+
+		</p>
+</div>
+
+	
+	<div class="box">
+		<h3 class="tex">Chassis</h3>
+		<img width="75%"  src="agrochassis.png"><br>
+
+		<p class="textsty">
+			<span id="dots">...</span><span id="more">
+
+			Chassis is the main support structure of the vehicle which is also known as ‘Frame’. It bears 
+all the stresses on the vehicle in both static and dynamic conditions. In a vehicle, it is 
+analogous to the skeleton in living organisms. The chassis used in our design is an 
+integrated form of two different frame with the base being ladder type and the upper body of 
+a space frame.<br>
+
+
+	
+		
+<b>Ladder Frame:</b> The simplest type of body-on-frame design is the ladder 
+frame. The frame looks like a ladder, with 2 rails interconnected with 
+lateral support members. 
+This is used commonly in pick-up trucks and other commercial vehicles 
+which deal with rough roads and uneven terrain.<br>
+Our choice is justified as:<br>
+a) it is simple in design and manufacturing<br>
+b) is efficient providing optimum strength as is evident from 
+their usage in pick up vehicles<br>
+
+ <b>Space / Tubular Frame:</b> The skeleton in this case is an internal framework of metal tubes.
+When compared to a Monocoque chassis (another 
+chassis type), here the skeleton of the car bears most 
+of the load.<br>
+It is a very popular design for race cars and all-terrain 
+vehicles like dune buggies.<br>
+It will provide strength to the battery casing, is very 
+efficient under impact testing and crash testing and its 
+manufacturing is easy as welding requires no expensive stamping presses and jigs. In this 
+way, our choice is justified.<br>
+
+
+	</span>
+
+
+</p>
+<button onclick="myFunction()" id="myBtn"><p>Read more</p></button>
+
+	</div>
+	<div class="box">
+		<h3 class="tex">Drive Module</h3>
+		<img width="90%" src="drimod.png"><br>
+
+		<p class="textsty">
+			<span id="dots2">...</span><span id="more2">
+
+			Complete bot is mounted on 4 such 
+drive modules making our bot a 4-
+wheel driven bot
+It consists of a DC motor that drives 
+the wheel through a two-stage 
+transmission. First stage is the chain 
+drive and then the in-wheel planetary 
+gearbox.<br>
+Planetary gearbox has following application-<br>
+• Transform torque<br>
+• Transform speed<br>
+Rotation of drive module is facilitated by the 
+stepper motor which is housed in the case that 
+is in turn connected with the chassis. 
+the Stepper case and rest of drive module are separated by a damper
+
+<img width="80%" src="dm.png">
+
+</span>
+
+</p>
+<button onclick="myFunction2()" id="myBtn2"><p>Read more</p></button>
+
+	</div>
+
+	<div class="box">
+	<h3 class="tex">Weed Remover</h3>
+	<img  width="80%" src="weeder.png"><br>
+		<p class="textsty">
+			<span id="dots3">...</span><span id="more3">
+			It consisted of a high rpm motor connected with 
+pair of fibre string / blades of cutter. It is 
+surrounded by two toothed wheels to uproot 
+weeds<br>
+Bot consist of 2 cutter and 4 toothed wheels</span>
+
+</p>
+<button onclick="myFunction3()" id="myBtn3"><p>Read more</p></button>	
+
+
+	</div>
+
+
+	<div class="box">
+	<h3 class="tex">Sprayer</h3>
+	<img width="50%"    src="sprayer.png"><br>
+	<p class="textsty">
+                <span id="dots4">...</span><span id="more4">
+		Two sprayers are mounted at the back of the bot. It 
+functions by using an air blower powered by a high 
+rpm motor. This air helps in suction of spraying 
+liquid (Bernoulli’s effect) to the spraying nozzle.</span>
+
+</p>		
+<button onclick="myFunction4()" id="myBtn4"><p>Read more</p></button>
+
+	</div>
+
+	<div id="bg">
+	<h1  >Electronics & Control</h1>
+	<img class="bot_img" src="jetson.png">
+	<p class="textsty2">We propose using Jetson Nano as the onboard computer; this is the main processing unit of
+the machine. <br></p>
+<ul id="textstyle2">
+	<li>It will take in data from various sources, process it and send control signals to
+the various actuator modules.</li>
+
+<li> It receives data from the camera and does image processing
+to detect the presence of weeds;</li>
+
+<li> it also receives LIDAR data to detect and avoid
+obstacles.</li>
+
+</ul>
+
+
+<p class="textsty2">This is also where communication to and from the mobile app takes place; using
+its wifi module which creates a wifi connection with the mobile app.
+
+</p>
+
+<p class="textsty2">
+
+	<span id="dots8">...</span><span id="more8">
+<img class="flow1" src="ele1.jpg"> 
+	A GPS module is also connected to the Jetson 
+so that accurate location data can be sent to 
+the mobile app. The navigation is controlled by 
+arduino uno which controls the various motor 
+drivers required for moving.<br> 
+The weeding and spraying system is controlled 
+by another arduino uno. The machine is 
+powered by powerful 24V, 24 AMH SLA 
+batteries.<br>
+Input will come from the app and will go to the 
+computer which also receives data from LIDAR 
+and camera .<br>
+
+
+	<img class="flow2" src="ele2.jpg"> 
+
+	Depending on the inputs given the computer will then send signals to the navigation 
+module (for movement) and spraying module (and spraying). And then will send data from 
+the computer to the app back.<br>
+The Robot’s control architecture for obstacle avoidance follows a Finite State 
+Machine(FSM) formulation with different behaviours as the corresponding states. The 
+complete structure is shown,<br>
+Go to goal behaviour is when the machine moves in 
+such a way so as to reach a goal point. Whenever an 
+obstacle is detected, the machine will follow the wall 
+of the obstacle so as to move around it and continue 
+to its goal point. If the machine gets dangerously 
+close to an obstacle it will go into avoid obstacle 
+behaviour where it moves directly opposite to the 
+obstacle. While moving whenever a weed is detected 
+by the computer vision system, it will go into weeding 
+behaviour.<br>
+</span>
+
+
+</p>
+<button onclick="myFunction8()" id="myBtn8"><p>Read more</p></button>
+
+
+
+	</div>
+
+
+
+
+
+
+
+	<div id="bg2">
+		<h1  >APP Dev & AI</h1>
+
+		<div class="box1">
+			    <img class="ai_img" width="20%" src="conn.jpg" >
+			<h3  class="tex1"> Connectivity</h3>
+			
+			<p class="textsty3"><span id="dots5">...</span><span id="more5">
+
+
+
+
+				● The three main components of the plan are: an Android app, Firebase database, and Wi-Fi Module connected to the microprocessor.<br>
+● We have planned to establish connection between rover’s microprocessor (e.g. Arduino) 
+and the user’s android app via firebase real-time DB. Data (like sensors data) stored to a 
+database can be accessed from anywhere by the internet. Firebase makes storing and 
+retrieving data easy. It also has lot of feature that can be exploited for a better 
+experience. We can read and transfer data from your database by Arduino and wi-fi 
+module. Host name and an Auth key of the firebase project is used to establish 
+connectivity and authentication . Then, the Firebase Arduino library is added and upload 
+to the code<br>
+
+The data collecting components collect data in real time from an environment and are interfaced 
+with the help of a microprocessor like Arduino. The Arduino serially sends this data to wi-fi module 
+which uploads the data on to Firebase. Once the data is on firebase, it can be accessed from 
+anywhere in the world with an internet connection of course! So, the android app is connected to 
+the firebase via internet to send and receive data from the same. 
+Here, is an example using LED to explain the above<br>
+<img width="100%" src="flow.png"><br>
+The Android app sends the serial data 1 or 0 to the Firebase database. The Firebase database interacts 
+with Wi-Fi Jetson and this Jetson acts on the basis of data received from Firebase Database. If Jetson 
+receives serial data 1, it turns ON the LED, and if Jetson receives serial input 0 then it turns OFF the LED.
+Firebase platform has 18 products which are used by 1.5 million apps. </span>
+
+
+
+</p>
+	<button onclick="myFunction5()" id="myBtn5"><p>Read more</p></button>		
+
+
+
+		</div>
+		<div class="box1">
+			<img class="ai_img" width="20%" src="app.jpg">
+			<h3 class="tex1">App Features</h3>
+			
+
+
+			<p class="textsty3"><span id="dots6">...</span><span id="more6">
+
+				The rover’s live location can be tracked all the time using GPS and intended map.
+The map can also be used to instruct the path of rover as and when required during live run 
+time.<br>
+The app will be able to calculate and indicate the following for all the main processes<br>
+•Work left<br>
+•Time required<br>
+•Speed of the bot<br>
+Navigation will be kept universal for all process<br>
+<b>1.SPRAYING</b><br>
+Spraying has a lot of features and control , the bot with feature the angles 
+between which the sprays will swing , also the range the sprayer can reach at a 
+time. Indication of the amount to fluid in the tanks can also be indicated. 
+Spraying will be featured with scheduling option , like when the spraying must 
+start and other information. <br>
+<b>2.WEEDING</b><br>
+The positions of weeds in the camera feed using Deep learning methods to 
+assist in the weeding process. It the detected plant is a weed it will be chopped 
+off.
+
+<img width="100%"  src="appint.jpg"><br>
+
+
+
+				 </span>
+
+
+
+</p>
+	<button onclick="myFunction6()" id="myBtn6"><p>Read more</p></button>		
+
+
+
+
+
+		</div>
+		<div class="box1">
+			<img class="ai_img" width="20%" src="ai1.jpg">
+			<h3 class="tex1">AI Technology</h3>
+			
+
+
+			<p class="textsty3"><span id="dots7">...</span><span id="more7">
+				<b> <u>WEED DETECTION USING DEEP LEARNING</u></b><br>
+<b>Aim </b>- To find the positions of weeds in the camera feed using Deep learning methods to 
+assist in the weeding process.<br>
+<b>Workflow</b> -
+The Camera attached at the front of the robot will provide a live feed to the user through 
+the APP. The App software will run the Detection script and provide the Control module 
+with the required coordinates.<br>
+<b>Dataset</b>- In order for Deep learning models to work, we need data. We can find Weed detection 
+datasets online with many varieties to choose. We can choose a custom weed dataset for 
+training the model.<br>
+<b>Script</b>-<br>
+• For the preparation of the script, We train a state of the art object detector for the task 
+beforehand.<br>
+• In the Script, we run the inference with the model with the feed obtained from the Camera 
+on the robot.<br>
+• The Script produces Detection boxes for weeds, which after filtering we send to the 
+Managing software.
+
+
+
+
+
+				 </span>
+
+
+
+</p>
+	<button onclick="myFunction7()" id="myBtn7"><p class="botton_text">Read more</p></button>		
+
+
+
+
+
+		</div>
+
+
+
+
+
+	</div>
+
+	<div class="divstyle"><p>All Rights reserved</p></div>
+
+
+
+
+
+</body>
+</html>
